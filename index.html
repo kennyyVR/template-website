@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Replit</title>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+    <header>
+        <h1>Welcome to Our Website</h1>
+        <nav>
+            <ul>
+                <li><a href="#about">About Us</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <section id="about">
+        <h2>About Us</h2>
+        <p>We are a dedicated team providing the best services to our customers. Our mission is to deliver high-quality solutions tailored to your needs.</p>
+    </section>
+    
+    <section id="services">
+        <h2>Services</h2>
+        <ul>
+            <li>Service 1: Detailed description of service 1.</li>
+            <li>Service 2: Detailed description of service 2.</li>
+            <li>Service 3: Detailed description of service 3.</li>
+        </ul>
+    </section>
+    
+    <section id="contact">
+        <h2>Contact</h2>
+        <p>If you have any questions, feel free to reach out to us via email at contact@ourwebsite.com or call us at (123) 456-7890.</p>
+    </section>
+    
+    <div id="chat-button" onclick="openChat()">Chat with Us</div>
+    
+    <div id="chat-modal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeChat()">&times;</span>
+            <h2>Chat with us!</h2>
+            <div id="chat-box">
+                <p><strong class="strobe">AI:</strong> Hello! How can I assist you today?</p>
+            </div>
+            <input type="text" id="user-input" placeholder="Type your message here..." onkeypress="handleKeyPress(event)">
+            <button onclick="sendMessage()">Send</button>
+        </div>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
